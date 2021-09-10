@@ -3,7 +3,7 @@ import {useState} from 'react';
 // import axios from 'axios';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import json2mq from 'json2mq';
-// import  {Router} from "@reach/router";
+import  {Router} from "@reach/router";
 // import $ from 'jquery';
 /////////////CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,6 +13,7 @@ import "./App.css";
 /////////////Components
 import Phone from "./Components/Phone";
 import Laptop from "./Components/Laptop";
+import Error404 from 'Components/General/Error404';
 // import Progressing from "./Components/General/Progressing";
 // import Error404 from "./Components/General/Error404";
 // import Login from "./Components/General/Login";
@@ -36,19 +37,25 @@ function App() {
   });
   
   return (
-    <div className="App">
+    <Router>
+
       {isPhone?
       <Phone
+        path={`${process.env.REACT_APP_FOR_PATH}/`}
         Theme= {Theme}
         setThem = {setTheme}
       />
       :
       <Laptop
+        path={`${process.env.REACT_APP_FOR_PATH}/`}
         Theme = {Theme}
         setTheme = {setTheme}
       />
       }
-    </div>
+      <Error404
+        path={`${process.env.REACT_APP_FOR_PATH}/*`}
+      />
+    </Router>
   );
 }
 

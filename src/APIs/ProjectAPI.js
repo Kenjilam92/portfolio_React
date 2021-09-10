@@ -1,8 +1,10 @@
 
-const ProjectList = [
+const path = process.env.REACT_APP_FOR_PATH;
+
+const ProjectAPI = [
     {
       title: "vanhoagroup",
-      logo: "/images/project/vanhoagroup/vanhoagroupicon.png",
+      logo: path + "/images/project/vanhoagroup/vanhoagroupicon.png",
       url: "http://vanhoagroup.com",
       features: [
           'Mobile - Friendly',
@@ -12,54 +14,54 @@ const ProjectList = [
       ],
       technologies:[
           {
-              imglink:"/images/skill/wix.png",
+              imglink:path + "/images/skill/wix.png",
               imgalt: "Wix.com",
               techName: "Wix"
           },
           {   
-              imglink: "/images/skill/seo.png",
+              imglink: path + "/images/skill/seo.png",
               imgalt: "seo",
               techName: "SEO"
           },
           {   
-              imglink: "/images/skill/googleads.png",
+              imglink: path + "/images/skill/googleads.png",
               imgalt: "GoogleAdwords",
               techName: "Google Adwords"
           },
           {   
-              imglink: "/images/skill/facebookads.png",
+              imglink: path + "/images/skill/facebookads.png",
               imgalt: "FacebookAds",
               techName: "Facebook Ads"
           }
       ],
       images:[
           {
-              imglink:"/images/project/vanhoagroup/vanhoagroup.png",
+              imglink:path + "/images/project/vanhoagroup/vanhoagroup.png",
               imgalt: "vanhoagroup.com",
               desc: "Home Page" 
           },
           {
-              imglink:"/images/project/vanhoagroup/products.png",
+              imglink:path + "/images/project/vanhoagroup/products.png",
               imgalt: "vanhoagroup.com",
               desc: "Products Page" 
           },
           {
-              imglink:"/images/project/vanhoagroup/page.png",
+              imglink:path + "/images/project/vanhoagroup/page.png",
               imgalt: "vanhoagroup.com",
               desc: "Other Product Page" 
           },
           {
-              imglink:"/images/project/vanhoagroup/viewproduct.png",
+              imglink:path + "/images/project/vanhoagroup/viewproduct.png",
               imgalt: "vanhoagroup.com",
               desc: "View Product" 
           },
           {
-              imglink:"/images/project/vanhoagroup/mobileverson.png",
+              imglink:path + "/images/project/vanhoagroup/mobileverson.png",
               imgalt: "vanhoagroup.com",
               desc: "Mobile Verson" 
           },
           {
-              imglink:"/images/project/vanhoagroup/seoresult.png",
+              imglink:path + "/images/project/vanhoagroup/seoresult.png",
               imgalt: "vanhoagroup.com",
               desc: "Google Search Results" 
           }
@@ -67,7 +69,7 @@ const ProjectList = [
     },
     {
       title: "The Flashcards Game",
-      logo: "/images/project/flashcard/flashcardsgameicon.png",
+      logo: path + "/images/project/flashcard/flashcardsgameicon.png",
       url: "https://github.com/Kenjilam92/flashcards_game",
       features: [
         "Mobile - Friendly",
@@ -78,79 +80,79 @@ const ProjectList = [
       ],
       technologies:[
           {
-            imglink:"/images/skill/html.png",
+            imglink:path + "/images/skill/html.png",
             imgalt: "Wix.com",
             techName: "HTML"
           },
           {
-            imglink:"/images/skill/css.png",
+            imglink:path + "/images/skill/css.png",
             imgalt: "seo",
             techName: "CSS"
           },
           {
-            imglink:"/images/skill/javascript.png",
+            imglink:path + "/images/skill/javascript.png",
             imgalt: "JavaScript",
             techName: "JS"
           },
           {
-            imglink:"/images/skill/bootstrap.png",
+            imglink:path + "/images/skill/bootstrap.png",
             imgalt: "Bootstrap",
             techName: "Bootstrap"
           },
           {
-            imglink:"/images/skill/jquery.png",
+            imglink:path + "/images/skill/jquery.png",
             imgalt: "jQuery",
             techName: "jQuery"
           },
           {
-            imglink:"/images/skill/mongodb.png",
+            imglink:path + "/images/skill/mongodb.png",
             imgalt: "MongoDB",
             techName: "MongoDB"
           },
           {
-            imglink:"/images/skill/expressjs.png",
+            imglink:path + "/images/skill/expressjs.png",
             imgalt: "ExpressJS",
             techName: "Express JS"
           },
           {
-            imglink:"/images/skill/react.png",
+            imglink:path + "/images/skill/react.png",
             imgalt: "React",
             techName: "React JS"
           },
           {
-            imglink:"/images/skill/nodejs.png",
+            imglink:path + "/images/skill/nodejs.png",
             imgalt: "NodeJS",
             techName: "NodeJS"
           }
       ],
       images:[
           {
-              imglink:"/images/project/flashcard/flashcardsgame.png",
+              imglink:path + "/images/project/flashcard/flashcardsgame.png",
               imgalt: "flashcardgame",
               desc: "Home Page" 
           },
           {
-            imglink:"/images/project/flashcard/displayconfig.png",
+            imglink:path + "/images/project/flashcard/displayconfig.png",
             imgalt: "configdisplay",
             desc: "Config display" 
           },
           {
-            imglink:"/images/project/flashcard/flippingcard.png",
+            imglink:path + "/images/project/flashcard/flippingcard.png",
             imgalt: "flippingcard",
             desc: "Flipping cards visual effect" 
           },
           {
-            imglink:"/images/project/flashcard/report.png",
+            imglink:path + "/images/project/flashcard/report.png",
             imgalt: "report",
             desc: "Unsuccessful Report" 
           },
           {
-            imglink:"/images/project/flashcard/editcards.png",
+            imglink:path + "/images/project/flashcard/editcards.png",
             imgalt: "CRUDcards",
             desc: "Add, Edit, & Delete Cards " 
           },
           {
-            imglink:"/images/project/flashcard/mobileverson.png",
+            imglink:path + "/images/project/flashcard/mobileverson.png",
             imgalt: "mobileverson",
             desc: "Mobile Verson" 
           }
@@ -158,7 +160,7 @@ const ProjectList = [
     },
     { 
       title: "My Portfolio (v.1.0)",
-      logo: "/images/project/myportfolio/portfolioicon.ico",
+      logo: path + "/images/project/myportfolio/portfolioicon.ico",
       url: "https://github.com/Kenjilam92/portfolio",
       features: [
         "Mobile - Friendly",
@@ -171,104 +173,104 @@ const ProjectList = [
       ],
       technologies:[
         {
-            imglink:"/images/skill/html.png",
+            imglink:path + "/images/skill/html.png",
             imgalt: "html",
             techName: "HTML"
         },
         {
-          imglink:"/images/skill/css.png",
+          imglink:path + "/images/skill/css.png",
           imgalt: "css",
           techName: "CSS"
         },
         {
-          imglink:"/images/skill/javascript.png",
+          imglink:path + "/images/skill/javascript.png",
           imgalt: "JavaScript",
           techName: "JS"
         },
         {
-          imglink:"/images/skill/c-sharp.png",
+          imglink:path + "/images/skill/c-sharp.png",
           imgalt: "C#",
           techName: "C#"
         },
         {
-          imglink:"/images/skill/bootstrap.png",
+          imglink:path + "/images/skill/bootstrap.png",
           imgalt: "Bootstrap",
           techName: "Bootstrap"
         },
         {
-          imglink:"/images/skill/jquery.png",
+          imglink:path + "/images/skill/jquery.png",
           imgalt: "jQuery",
           techName: "jQuery"
         },
         {
-          imglink:"/images/skill/mysql.png",
+          imglink:path + "/images/skill/mysql.png",
           imgalt: "MySQL",
           techName: "MySQL"
         },
         {
-          imglink:"/images/skill/dotnet.png",
+          imglink:path + "/images/skill/dotnet.png",
           imgalt: "dotnet",
           techName: ".NET"
         },
         {
-          imglink:"/images/skill/asp.png",
+          imglink:path + "/images/skill/asp.png",
           imgalt: "ASP",
           techName: "ASP Core"
         },
         {
-          imglink:"/images/skill/react.png",
+          imglink:path + "/images/skill/react.png",
           imgalt: "React",
           techName: "React JS"
         },
         {
-          imglink:"/images/skill/nodejs.png",
+          imglink:path + "/images/skill/nodejs.png",
           imgalt: "NodeJS",
           techName: "Node JS"
         },
         {
-          imglink:"/images/skill/aws.png",
+          imglink:path + "/images/skill/aws.png",
           imgalt: "aws",
           techName: "AWS"
         }
       ],
       images:[
         {
-            imglink:"/images/project/myportfolio/laptophomepage.jpg",
+            imglink:path + "/images/project/myportfolio/laptophomepage.png",
             imgalt: "kenjilam",
             desc: "Laptop Home Page" 
         },
         {
-          imglink:"/images/project/myportfolio/responsive4k.png",
+          imglink:path + "/images/project/myportfolio/responsive4k.png",
           imgalt: "responsive4k",
           desc: "Responsive 4K screen Display" 
         },
         {
-          imglink:"/images/project/myportfolio/responsivelaptop.png",
+          imglink:path + "/images/project/myportfolio/responsivelaptop.png",
           imgalt: "responsivelaptop",
           desc: "Responsive Laptop Display" 
         },
         {
-          imglink:"/images/project/myportfolio/responsivetablet.png",
+          imglink:path + "/images/project/myportfolio/responsivetablet.png",
           imgalt: "responsivetablet",
           desc: "Responsive Tablet Display" 
         },
         {
-          imglink:"/images/project/myportfolio/validation.png",
+          imglink:path + "/images/project/myportfolio/validation.png",
           imgalt: "validationform",
           desc: "Complex Form Validation" 
         },
         {
-          imglink:"/images/project/myportfolio/phonemenu.png",
+          imglink:path + "/images/project/myportfolio/phonemenu.png",
           imgalt: "Togglemenu",
           desc: "Toggle Menu" 
         },        
         {
-          imglink:"/images/project/myportfolio/responsivephone.png",
+          imglink:path + "/images/project/myportfolio/responsivephone.png",
           imgalt: "responsivephone",
           desc: "Responsive Phone Display" 
         },
         {
-          imglink:"/images/project/myportfolio/phonehomepage.png",
+          imglink:path + "/images/project/myportfolio/phonehomepage.png",
           imgalt: "kenjilam",
           desc: "Phone Home Page" 
         }
@@ -277,4 +279,4 @@ const ProjectList = [
 ];
   
   
-export default ProjectList;
+export default ProjectAPI;

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import ProjectButton from "./ProjectButton";
 import ProjectDetails from "./ProjectDetails";
-import projectsList from "./ProjectList"
+import projectsList from "APIs/ProjectAPI"
 // import Carousel from "react-slick";
 
 import "slick-carousel/slick/slick.css";

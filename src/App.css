@@ -107,3 +107,7 @@ body{
   /* text-orientation: mixed; */
   transform: rotate(180deg);
 }
+
+.full-page{
+  min-height: 98vh;
+}

@@ -8,13 +8,14 @@ import Projects from "./Projects/Laptop/Projects";
 import Menu from "./Menu/Laptop/Menu";
 import SocialLink from "./SocialLink/Laptop/SocialLink";
 import Resume from "./General/Resume"
-
+// import img1 from "/images/kenjilam_baltimore.jpg"
 /// APIs
 import MenuAPI from "APIs/MenuAPI";
+///
 
 /////////
 const Laptop = props =>{
-    const img1 = "/images/kenjilam_baltimore.jpg";
+    const img1 = `${process.env.REACT_APP_FOR_PATH}/images/kenjilam_baltimore.jpg`;
     const backGround = {
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${img1}")`,
         width: 100+"vw",

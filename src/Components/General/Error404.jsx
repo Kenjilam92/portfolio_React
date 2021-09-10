@@ -2,16 +2,19 @@ import React from "react";
 
 const Error404 = props =>{
     return(
-        <div className="row text-center align-items-center">
-            <div className="col-sm-3">
+        <div className=" full-page d-flex text-center justify-content-center align-items-center">
+            <div className="w-25">
             
-                <img className="w-75 rounded-circle"
-                     src="../images/kenjilam92_square.jpg" 
+            <img className=" w-100 rounded-circle"
+                     src="../images/skill/react.png" 
                      alt="Kenji Lam"/>
             </div>
-            <div className="col-sm-9">
-              <p className="h1 text-warning">Error 404! Page is not found</p>
-            </div>
+            &npsp;
+            {/* <div className=""> */}
+            <p className="h1 text-warning">
+                Error 404!<br/>Page is not found
+            </p>
+            {/* </div> */}
         </div>
     );
 }
