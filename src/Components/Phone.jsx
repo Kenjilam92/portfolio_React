@@ -16,7 +16,9 @@ import MenuAPI from "APIs/MenuAPI";
 /////////
 
 const Phone = props =>{
-    const img1 = "/images/kenjilam_mountain.jpg";
+    const path = process.env.REACT_APP_FOR_PATH;
+
+    const img1 = path + "/images/kenjilam_mountain.jpg";
     const backGround = {
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${img1}")`,
         width: 100+"vw",
