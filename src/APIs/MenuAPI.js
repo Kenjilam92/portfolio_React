@@ -12,16 +12,16 @@ const MenuAPI =[
         url: "/aboutme"
     },
     {
-        title: "Projects",
-        id: "MenuProjects",
-        section: "Projects",
-        url: "/projects"
-    },
-    {
         title: "Resume",
         id: "MenuResume",
         section: "Resume",
         url: "/resume"
+    },
+    {
+        title: "Projects",
+        id: "MenuProjects",
+        section: "Projects",
+        url: "/projects"
     }
 ];
 

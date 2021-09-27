@@ -89,19 +89,19 @@ const Phone = props =>{
                 />
                 </div>
                 <div>
-                <Projects
-                    className="text-white w-100"
-                    style={SectionsHeight}
-                    Theme={props.Theme}
-                    id="Projects"
-                />
-                </div>
-                <div>
                 <Resume
                     className="text-white w-100"
                     Theme={props.Theme}
                     style={SectionsHeight}
                     id="Resume"
+                />
+                </div>
+                <div>
+                <Projects
+                    className="text-white w-100"
+                    style={SectionsHeight}
+                    Theme={props.Theme}
+                    id="Projects"
                 />
                 </div>
                 

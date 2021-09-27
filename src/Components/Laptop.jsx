@@ -87,6 +87,10 @@ const Laptop = props =>{
                     style={SectionsHeight} 
                     id="AboutMe"
                 />
+                <Resume
+                    style={SectionsHeight}
+                    id="Resume"
+                />
 
                 <Projects
                     className="text-white"
@@ -95,10 +99,6 @@ const Laptop = props =>{
                     id="Projects"
                 />
                 
-                <Resume
-                    style={SectionsHeight}
-                    id="Resume"
-                />
             </div>
         </div>
         </>
