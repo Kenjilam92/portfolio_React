@@ -108,9 +108,9 @@ const ResumeAPI =[
         "period": "2021-2022",
         "type": "experience",
         "title": "Production Support",
-        "organization": "CVS",
+        "organization": "CVS Pharmacy",
         "description": "",
-        "url": "www.cvs.com",
+        "url": "https://cvs.com",
         "keywords":["Java", "Angular", "Spring", "Hibernate", "Oracle", "DevOps", "Micro Services", "ServicesNOW"],
         "bulletPoints": [
             "Maintained a full-stack project that helped medical team fastening documentation process which follows HIPAA standard ",
@@ -126,7 +126,7 @@ const ResumeAPI =[
         "title": "Software Developer",
         "organization": "Freddie Mac",
         "description": "",
-        "url": "www.freddiemac.com",
+        "url": "https://freddiemac.com",
         "keywords":["Java", "Angular", "Spring", "Hibernate", "Oracle", "DevOps", "Micro Services", "ServicesNOW"],
         "bulletPoints": [
             "Developed an internal full stack project that helped teams access database and generated reports with friendly UI",
@@ -137,6 +137,7 @@ const ResumeAPI =[
         ]
     }
 ]
+
 
 
 export default ResumeAPI;
