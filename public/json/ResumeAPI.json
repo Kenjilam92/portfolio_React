@@ -1,4 +1,4 @@
-const ResumeAPI =[
+[
     {
         "period": "2010-2014",
         "type": "education",
@@ -66,7 +66,7 @@ const ResumeAPI =[
         "title": "Medical Interpreter",
         "organization": "Liberty Language Services",
         "description": "",
-        "url": "www.libertylanguageservices.com",
+        "url": "https://www.libertylanguageservices.com",
         "keywords":[],
         "bulletPoints": [
             "Provided steady interpreting conversations in medical fields",
@@ -137,7 +137,3 @@ const ResumeAPI =[
         ]
     }
 ]
-
-
-
-export default ResumeAPI;

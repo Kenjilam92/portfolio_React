@@ -1,7 +1,20 @@
-import React from 'react';
-import ResumeAPI from "APIs/ResumeAPI";
+import React, { useEffect, useState } from 'react';
 
 const Resume = props => {
+    const [ResumeAPI, setResumeAPI] =useState([])
+    
+    const getData =() => {
+        fetch("/json/ResumeAPI.json", {
+            headers:{
+                "Content-Type":"application/json",
+                Accept: "application/json"
+            },
+        })
+        .then ( res => res.json() )
+        .then ( json => setResumeAPI(json))
+    }
+    useEffect( () => getData() , [] );
+
     return(
         <div className={`${props.className}`} style={props.style} id={props.id}>
             <p className="text-warning h1 mb-4">Resume</p>
