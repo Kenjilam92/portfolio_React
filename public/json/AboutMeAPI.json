@@ -1,0 +1,181 @@
+{
+    "content" : [
+        "Hello,",
+        "My name is Kenji! I am a digital marketing specialist and full-stack website developer. I have seven years of experience in building websites and developing online marketing strategies. One of my previous projects is even located within the top 3 results of Google Search! This expertise provides my clients with greater access to their targeted population. With my help, you can achieve high visibility and increase web traffic on all major search engines, such as Google, Bing, and Yahoo.",
+        "I have a great passion for technology and mathematics. I typed my first lines of code to solve algorithms when I was in high school. However, the internet and the technology of my country, Vietnam, in the 2000s, was not so advanced. Therefore, I focused on business fields and mathematics and got my bachelor's degree in Marketing Management. In 2014, I had my first job as a Digital Marketer, who analyze data and develop SEO strategies for commercial websites. This opportunity brought me closer to the web developer career. In 2016, I became a permanent resident of the United States and invested two years in college to understand the culture and market in the U.S. While adapting to this new life, I have been working on side-projects and developing my coding skills. Specifically, I can use multiple coding languages including Python, C#, and JavaScript. Also, I have proficiency in full-stack frameworks, such as Django, ASP.NET core MVC, MERN, etc., which connect with different database systems like MongoDB, MySQL, SQLite.",
+        "Besides continuously developing other coding languages, frameworks, and data management, I am still available for a fulltime position or side projects. If you are interested in working with me, please don't hesitate to leave me a message! It will be my pleasure to work with you."
+    ],
+    "skill": [
+        {
+            "imglink":"/images/skill/seo.png",
+            "imgalt":"SEO",
+            "title":"SEO"
+        },
+        {
+            "imglink":"/images/skill/facebookads.png",
+            "imgalt":"FacebookAds",
+            "title":"Facebook Ads"
+        },
+        {
+            "imglink":"/images/skill/googleads.png",
+            "imgalt":"Google Adwords",
+            "title":"Google Adwords"
+        },
+        {
+            "imglink":"/images/skill/aws.png",
+            "imgalt":"aws",
+            "title":"AWS"
+        },
+        {
+            "imglink":"/images/skill/html.png",
+            "imgalt":"html",
+            "title":"HTML"
+        },
+        {
+            "imglink":"/images/skill/css.png",
+            "imgalt":"css",
+            "title":"CSS"
+        },
+        {
+            "imglink":"/images/skill/javascript.png",
+            "imgalt":"javascript",
+            "title":"JavaScript"
+        },
+        {
+            "imglink":"/images/skill/c-sharp.png",
+            "imgalt":"c#",
+            "title":"C#"
+        },
+        {
+            "imglink":"/images/skill/python.png",
+            "imgalt":"python",
+            "title":"Python"
+        },
+        {
+            "imglink":"/images/skill/react.png",
+            "imgalt":"react",
+            "title":"React"
+        },
+        {
+            "imglink":"/images/skill/dotnet.png",
+            "imgalt":"dotnet",
+            "title":".NET"
+        },
+        {
+            "imglink":"/images/skill/aspcoremvc.png",
+            "imgalt":"ASP_core_MVC",
+            "title":"ASP Core MVC"
+        },
+        {
+            "imglink":"/images/skill/expressjs.png",
+            "imgalt":"expressjs",
+            "title":"Express JS"
+        },
+        {
+            "imglink":"/images/skill/nodejs.png",
+            "imgalt":"nodejs",
+            "title":"Node JS"
+        },
+        {
+            "imglink":"/images/skill/django.png",
+            "imgalt":"django",
+            "title":"Django"
+        },
+        {
+            "imglink":"/images/skill/bootstrap.png",
+            "imgalt":"bootstrap",
+            "title":"Bootstrap"
+        },
+        {
+            "imglink":"/images/skill/jquery.png",
+            "imgalt":"jquery",
+            "title":"jQuery"
+        },
+        {
+            "imglink":"/images/skill/socket.png",
+            "imgalt":"socket",
+            "title":"Socket IO"
+        },
+        {
+            "imglink":"/images/skill/ajax.png",
+            "imgalt":"ajax",
+            "title":"Ajax"
+        },
+        {
+            "imglink":"/images/skill/mysql.png",
+            "imgalt":"mysql",
+            "title":"MySQL"
+        },
+        {
+            "imglink":"/images/skill/sqlite.png",
+            "imgalt":"splite",
+            "title":"SQLite"
+        },
+        {
+            "imglink":"/images/skill/mongodb.png",
+            "imgalt":"mongodb",
+            "title":"MongoDB"
+        },
+        {
+            "imglink":"/images/skill/wix.png",
+            "imgalt":"Wix.com",
+            "title":"Wix"
+        },
+        {
+            "imglink":"/images/skill/coreldraw.png",
+            "imgalt":"CorelDraw",
+            "title":"CorelDraw"
+        },
+        {
+            "imglink":"/images/skill/photoshop.png",
+            "imgalt":"Photoshop",
+            "title":"Photoshop"
+        },
+        {
+            "imglink":"/images/skill/servicenow.png",
+            "imgalt":"serviceNow",
+            "title":"Service Now"
+        },
+        {
+            "imglink":"/images/skill/angular.png",
+            "imgalt":"Angular",
+            "title":"Angular"
+        },
+        {
+            "imglink":"/images/skill/git.png",
+            "imgalt":"Git",
+            "title":"Git"
+        },
+        {
+            "imglink":"/images/skill/jenkins.jpg",
+            "imgalt":"Jenkins",
+            "title":"Jenkins"
+        },
+        {
+            "imglink":"/images/skill/typescript.png",
+            "imgalt":"typescript",
+            "title":"TypeScript"
+        },
+        {
+            "imglink":"/images/skill/shellscript.png",
+            "imgalt":"Shell_script",
+            "title":"Shell Script"
+        },
+        {
+            "imglink":"/images/skill/spring.png",
+            "imgalt":"Spring",
+            "title":"Spring"
+        },
+        {
+            "imglink":"/images/skill/oracleSQL.png",
+            "imgalt":"Oracle_SQL",
+            "title":"Oracle SQL"
+        },
+        {
+            "imglink":"/images/skill/java.png",
+            "imgalt":"Java",
+            "title":"Java"
+        }    
+    ]
+
+}

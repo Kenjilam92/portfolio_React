@@ -1,10 +1,25 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Card from "../../General/Card";
 import Carousel from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import AboutMeAPI from 'APIs/AboutMeAPI';
 const AboutMe = props =>{
+  const [AboutMeAPI, setAboutMeAPI] =useState({
+    "content": [],
+    "skill":[]
+  })  
+  const getData =() => {
+      fetch("/json/AboutMeAPI.json", {
+          headers:{
+              "Content-Type":"application/json",
+              Accept: "application/json"
+          },
+      })
+      .then ( res => res.json() )
+      .then ( json => setAboutMeAPI(json))
+  }
+  useEffect( () => getData() , [] );  
+
   const settings = {
     dots: false,
     infinite: true,
