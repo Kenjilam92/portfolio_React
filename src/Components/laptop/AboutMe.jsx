@@ -58,7 +58,7 @@ const AboutMe = props =>{
       })
   }
   
-  useEffect( () => getData() , [getData] );
+  useEffect( () => getData() , [] );
   
   return(
       <div id={props.id} className={`${props.className}`} style={props.style}>
