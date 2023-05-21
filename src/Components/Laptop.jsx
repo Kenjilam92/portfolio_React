@@ -15,23 +15,12 @@ import MenuAPI from "APIs/MenuAPI";
 
 /////////
 const Laptop = props =>{
-    const img1 = `${process.env.REACT_APP_FOR_PATH}/images/kenjilam_baltimore.jpg`;
-    const backGround = {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${img1}")`,
-        width: 100+"vw",
-        height: 100+"vh",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        overflow: "scroll",
-    };
 
-    const SectionsHeight = {
-        width: 100+"%",
-        minHeight: 70+"vh",
-        marginBottom: 30+"vh",
-    }
-
+    // const SectionsHeight = {
+    //     width: 100+"%",
+    //     minHeight: 70+"vh",
+    //     marginBottom: 30+"vh",
+    // }
     
     const showSection = (e) =>{
         var selectedLocation = document.getElementById(e);
@@ -72,9 +61,9 @@ const Laptop = props =>{
             />
 
             <Home
-                className="text-white text-center text-nowrap pt-5 w-100" 
+                className="text-white text-center text-nowrap pt-5 w-100 pageSection" 
                 Theme={props.Theme}
-                style={SectionsHeight}
+                // style={SectionsHeight}
                 nameStyle={{fontSize: 35+"pt"}}
                 titleStyle={{fontSize: 14+"pt"}}
                 id="Home"
@@ -83,18 +72,18 @@ const Laptop = props =>{
 
             <div className="col page">
                 <Aboutme
-                    className="text-white text-left"
-                    style={SectionsHeight} 
+                    className="text-white text-left pageSection"
+                    // style={SectionsHeight} 
                     id="AboutMe"
                 />
                 <Resume
-                    style={SectionsHeight}
+                    // style={SectionsHeight}
                     id="Resume"
                 />
 
                 <Projects
-                    className="text-white"
-                    style={SectionsHeight}
+                    className="text-white pageSection"
+                    // style={SectionsHeight}
                     Theme={props.Theme}
                     id="Projects"
                 />
