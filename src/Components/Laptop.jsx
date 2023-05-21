@@ -30,7 +30,7 @@ const Laptop = props =>{
     ///////Render
     return(
         <>  
-        <div className="d-flex flex-column align-items-end pr-3 backgroundLatop">   
+        <div className="pr-3 backgroundLatop">   
             <Menu 
                 API= {MenuAPI}
                 Theme= {props.Theme}
@@ -63,27 +63,24 @@ const Laptop = props =>{
             <Home
                 className="text-white text-center text-nowrap pt-5 w-100 pageSection" 
                 Theme={props.Theme}
-                // style={SectionsHeight}
                 nameStyle={{fontSize: 35+"pt"}}
                 titleStyle={{fontSize: 14+"pt"}}
                 id="Home"
                 click={showSection}
             />
 
-            <div className="col page">
+            <div className="page">
                 <Aboutme
                     className="text-white text-left pageSection"
-                    // style={SectionsHeight} 
                     id="AboutMe"
                 />
                 <Resume
-                    // style={SectionsHeight}
+                    className="text-white pageSection"
                     id="Resume"
                 />
 
                 <Projects
                     className="text-white pageSection"
-                    // style={SectionsHeight}
                     Theme={props.Theme}
                     id="Projects"
                 />
