@@ -140,7 +140,7 @@ body{
     /* right:0; */
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     overflow-x: hidden;
   }
 
@@ -167,7 +167,7 @@ body{
         background-size: cover;
         position: absolute;
         overflow-y: scroll;
-        overflow-x: hidden
+        overflow-x: hidden;
   }   
 
   .pageSection{
