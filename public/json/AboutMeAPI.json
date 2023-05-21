@@ -196,6 +196,11 @@
             "imglink":"/images/skill/OpenShift.png",
             "imgalt":"openshift",
             "title":"OpenShift"
+        },
+        {
+            "imglink":"/images/skill/jira.png",
+            "imgalt":"jira",
+            "title":"Jira"
         }
 
     ]

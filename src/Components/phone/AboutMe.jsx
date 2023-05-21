@@ -9,14 +9,13 @@ const AboutMe = props =>{
     "skill":[]
   })
   const order = [
-    "Service Now","Jira","Shell Script",
-    "Git","Jenkins","Docker","Node Js",
-    "Java","C#","Type Script","python",
-    "Spring", ".NET", "ASP_Core","Django",
-    "Angular","React","Bootstrap",
-    "Photoshop","CorelDraw",
-    "SEO","Facebook Ads", "Google Adwords"
-  ]
+    "Shell Script","Java","C#","TypeScript","Python","HTML","CSS","JavaScript",
+    "Spring", ".NET", "Django","Angular","React","Bootstrap", "ASP Core","Socket IO", "jQuery","Express JS",
+    "Service Now","Jira","Git","Jenkins","Docker","AWS","OpenShift","Node Js",
+    "Oracle","DB2", "AWS","Sybase","MongoDB","MySQL", "SQLite", 
+    "SEO","Facebook Ads", "Google Adwords", "Photoshop","CorelDraw","Wix"
+  ];
+
   const getData =() => {
       fetch("/json/AboutMeAPI.json", {
           headers:{
@@ -34,7 +33,7 @@ const AboutMe = props =>{
   }
 
   const orderFunction = (a,b) => {
-  return order.indexOf(a.title)-order.indexOf(b.title);
+    return order.indexOf(a.title)-order.indexOf(b.title);
   }
   useEffect( () => getData() , [] );  
 
