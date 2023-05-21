@@ -41,7 +41,7 @@ const Laptop = props =>{
     ///////Render
     return(
         <>  
-        <div className="d-flex flex-column align-items-end pr-3" style={backGround}>   
+        <div className="d-flex flex-column align-items-end pr-3 backgroundLatop">   
             <Menu 
                 API= {MenuAPI}
                 Theme= {props.Theme}
@@ -81,7 +81,7 @@ const Laptop = props =>{
                 click={showSection}
             />
 
-            <div className="col" style={{width: 65+"vw", height:"fit-content", position:"relative", right:0}}>
+            <div className="col page">
                 <Aboutme
                     className="text-white text-left"
                     style={SectionsHeight} 

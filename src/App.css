@@ -131,3 +131,22 @@ body{
     overflow-x: scroll;
     overflow-y: hidden;
   }
+  
+  .page{
+    width: 65vw; 
+    height:"fit-content"; 
+    position:"relative"; 
+    right:0;
+    overflow-x: hidden;
+  }
+
+  .backgroundLatop{     
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/kenjilam_baltimore.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: "center";
+    background-repeat: "no-repeat";
+    background-size: "cover";
+    overflow-y: "scroll";
+    overflow-x: hidden;
+  }
