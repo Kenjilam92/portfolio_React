@@ -130,6 +130,7 @@ body{
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
+    margin-bottom: 1rem;
   }
   
   .page{

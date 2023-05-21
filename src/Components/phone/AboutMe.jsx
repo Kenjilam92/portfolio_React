@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import Card from "../General/Card";
-import Carousel from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const AboutMe = props =>{
@@ -8,13 +7,19 @@ const AboutMe = props =>{
     "content": [],
     "skill":[]
   })
-  const order = [
-    "Shell Script","Java","C#","TypeScript","Python","HTML","CSS","JavaScript",
-    "Spring", ".NET", "Django","Angular","React","Bootstrap", "ASP Core","Socket IO", "jQuery","Express JS",
-    "Service Now","Jira","Git","Jenkins","Docker","AWS","OpenShift","Node Js",
-    "Oracle","DB2", "AWS","Sybase","MongoDB","MySQL", "SQLite", 
-    "SEO","Facebook Ads", "Google Adwords", "Photoshop","CorelDraw","Wix"
-  ];
+  const [CodingLanguages,setCodingLanguages] = useState([]);
+  const [FrameWorks,setFrameWorks] = useState([]);
+  const [CICD,setCICD] = useState([]);
+  const [Other,setOther] = useState([]);
+  const [Database, setDatabase] = useState([]);
+  
+  // const order = [
+  const CICDList = ["Service Now","Jira","Git","Jenkins","Docker","AWS","OpenShift","Node Js"];
+  const CodingLanguagesList =["Shell Script","Java","C#","TypeScript","Python","HTML","CSS","JavaScript"];
+  const FrameWorksList = ["Spring", ".NET", "Django","Angular","React","Bootstrap", "ASP Core","Socket IO", "jQuery","Express JS"];
+  const OtherList = ["SEO","Facebook Ads", "Google Adwords", "Photoshop","CorelDraw","Wix"];
+  const DatabaseList = ["Oracle","DB2", "AWS","Sybase","MongoDB","MySQL", "SQLite", ];
+
 
   const getData =() => {
       fetch("/json/AboutMeAPI.json", {
@@ -25,46 +30,30 @@ const AboutMe = props =>{
       })
       .then ( res => res.json() )
       .then ( json => {
-        var tempJson = json; 
-        tempJson.skill.sort(orderFunction)
-        tempJson.skill = tempJson.skill.filter((a) => order.includes(a.title));
-        setAboutMeAPI(tempJson);
+        setAboutMeAPI(json);
+        setCodingLanguages(
+          json.skill.sort( (a,b) => CodingLanguagesList.indexOf(a.title) - CodingLanguagesList.indexOf(b.title) )
+                    .filter( (a) => CodingLanguagesList.includes(a.title))
+        );
+        setCICD(
+          json.skill.sort( (a,b) => CICDList.indexOf(a.title) - CICDList.indexOf(b.title) )
+                    .filter( (a) => CICDList.includes(a.title))
+        );
+        setFrameWorks(
+          json.skill.sort( (a,b) => FrameWorksList.indexOf(a.title) - FrameWorksList.indexOf(b.title) )
+                    .filter( (a) => FrameWorksList.includes(a.title))
+        );
+        setOther(
+          json.skill.sort( (a,b) => OtherList.indexOf(a.title) - OtherList.indexOf(b.title) )
+                    .filter( (a) => OtherList.includes(a.title))
+        );
+        setDatabase(
+          json.skill.sort( (a,b) => DatabaseList.indexOf(a.title) - DatabaseList.indexOf(b.title) )
+                    .filter( (a) => DatabaseList.includes(a.title))
+        );
       })
   }
-
-  const orderFunction = (a,b) => {
-    return order.indexOf(a.title)-order.indexOf(b.title);
-  }
   useEffect( () => getData() , [] );  
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 20,
-    slidesToShow: 12,
-    slidesToScroll: 1,
-    swipe: true,
-    arrows: false,
-    focusOnSelect: true,
-    responsive: [
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        }
-      }
-    ],
-  };
   
   return(
       <div id={props.id} className={`${props.className}`} style={props.style}>
@@ -75,12 +64,37 @@ const AboutMe = props =>{
           </p>  
         )}
         <p className="h3 font-weight-bold text-warning">Technical Skills:</p>
-        <div className="w-100 text-white">
-        <Carousel {...settings}>
-          {AboutMeAPI.skill.map( (t,k) =>
-              <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
-          )}
-        </Carousel>
+        <div className="w-100 text-white col">
+          <p className="h4 font-weight-bold:">Coding Languages</p>
+          <div className="skillRow">
+              {CodingLanguages.map( (t,k) =>
+                <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
+              )}
+          </div>
+          <p className="h4 font-weight-bold:">Frameworks</p>
+          <div className="skillRow">
+              {FrameWorks.map( (t,k) =>
+                <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
+              )}
+          </div>
+          <p className="h4 font-weight-bold:">CI/CD</p>
+          <div className="skillRow">
+              {CICD.map( (t,k) =>
+                <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
+              )}
+          </div>
+          <p className="h4 font-weight-bold:">Database</p>
+          <div className="skillRow">
+              {Database.map( (t,k) =>
+                <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
+              )}
+          </div>
+          <p className="h4 font-weight-bold:">Other</p>
+          <div className="skillRow">
+              {Other.map( (t,k) =>
+                <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
+              )}
+          </div>
         </div>
       </div>
   );
