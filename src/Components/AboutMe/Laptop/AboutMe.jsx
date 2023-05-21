@@ -9,6 +9,16 @@ const AboutMe = props =>{
     "content": [],
     "skill":[]
   })
+  const [CodingLanguages,setCodingLanguages] = useState([]);
+  const [FrameWorks,setFrameWorks] = useState([]);
+  const [CICD,setCICD] = useState([]);
+  const [Other,setOther] = useState([]);
+  
+  // const order = [
+  const CICDList = ["Service Now","Jira","Git","Jenkins","Docker","Node Js"];
+  const CodingLanguagesList =["Shell Script","Java","C#","TypeScript","Python","HTML","CSS","JavaScript"];
+  const FrameWorksList = ["Spring", ".NET", "ASP_Core","Django","Angular","React","Bootstrap"];
+  const OtherList = ["SEO","Facebook Ads", "Google Adwords", "Photoshop","CorelDraw"];
   
   const getData =() => {
       fetch("/json/AboutMeAPI.json", {
@@ -18,38 +28,32 @@ const AboutMe = props =>{
           },
       })
       .then ( res => res.json() )
-      .then ( json => setAboutMeAPI(json))
+      .then ( json => {
+        // var tempJson = json; 
+        // tempJson.skill.sort(orderFunction)
+        // tempJson.skill = tempJson.skill.filter((a) => order.includes(a.title));
+        setAboutMeAPI(json);
+        let tempJson = json.skill;
+        setCodingLanguages(
+          json.skill.sort( (a,b) => CodingLanguagesList.indexOf(a.title) - CodingLanguagesList.indexOf(b.title) )
+                    .filter( (a) => CodingLanguagesList.includes(a.title))
+        );
+        setCICD(
+          json.skill.sort( (a,b) => CICDList.indexOf(a.title) - CICDList.indexOf(b.title) )
+                    .filter( (a) => CICDList.includes(a.title))
+        );
+        setFrameWorks(
+          json.skill.sort( (a,b) => FrameWorksList.indexOf(a.title) - FrameWorksList.indexOf(b.title) )
+                    .filter( (a) => FrameWorksList.includes(a.title))
+        );
+        setOther(
+          json.skill.sort( (a,b) => OtherList.indexOf(a.title) - OtherList.indexOf(b.title) )
+                    .filter( (a) => OtherList.includes(a.title))
+        );
+      })
   }
+  
   useEffect( () => getData() , [] );
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 20,
-    slidesToShow: 12,
-    slidesToScroll: 1,
-    swipe: true,
-    arrows: false,
-    focusOnSelect: true,
-    responsive: [
-      {
-        breakpoint: 1800,
-        settings: {
-          slidesToShow: 8,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 6,
-          slidesToScroll: 1,
-        }
-      }
-    ],
-  };
   
   return(
       <div id={props.id} className={`${props.className}`} style={props.style}>
@@ -61,14 +65,32 @@ const AboutMe = props =>{
         )}
         
         
-        <p className="h3 font-weight-bold text-warning">Technical Skills:</p>
-        <div className="w-100 text-white">
-          <Carousel {...settings}>
-              {AboutMeAPI.skill.map( (t,k) =>
+        <p className="h3 font-weight-bold text-warning">Technical Skills</p>
+        <div className="w-100 text-white col">
+          <p className="h4 font-weight-bold:">Coding Languages</p>
+          <div className="skillRow">
+              {CodingLanguages.map( (t,k) =>
                 <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
               )}
-          
-          </Carousel>
+          </div>
+          <p className="h4 font-weight-bold:">Frameworks</p>
+          <div className="skillRow">
+              {FrameWorks.map( (t,k) =>
+                <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
+              )}
+          </div>
+          <p className="h4 font-weight-bold:">CI/CD</p>
+          <div className="skillRow">
+              {CICD.map( (t,k) =>
+                <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
+              )}
+          </div>
+          <p className="h4 font-weight-bold:">Other</p>
+          <div className="skillRow">
+              {Other.map( (t,k) =>
+                <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
+              )}
+          </div>
         </div>
       </div>
   );

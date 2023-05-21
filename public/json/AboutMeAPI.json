@@ -7,26 +7,6 @@
     ],
     "skill": [
         {
-            "imglink":"/images/skill/seo.png",
-            "imgalt":"SEO",
-            "title":"SEO"
-        },
-        {
-            "imglink":"/images/skill/facebookads.png",
-            "imgalt":"FacebookAds",
-            "title":"Facebook Ads"
-        },
-        {
-            "imglink":"/images/skill/googleads.png",
-            "imgalt":"Google Adwords",
-            "title":"Google Adwords"
-        },
-        {
-            "imglink":"/images/skill/aws.png",
-            "imgalt":"aws",
-            "title":"AWS"
-        },
-        {
             "imglink":"/images/skill/html.png",
             "imgalt":"html",
             "title":"HTML"
@@ -42,6 +22,11 @@
             "title":"JavaScript"
         },
         {
+            "imglink":"/images/skill/java.png",
+            "imgalt":"Java",
+            "title":"Java"
+        },
+        {
             "imglink":"/images/skill/c-sharp.png",
             "imgalt":"c#",
             "title":"C#"
@@ -50,6 +35,36 @@
             "imglink":"/images/skill/python.png",
             "imgalt":"python",
             "title":"Python"
+        },
+        {
+            "imglink":"/images/skill/typescript.png",
+            "imgalt":"typescript",
+            "title":"TypeScript"
+        },
+        {
+            "imglink":"/images/skill/shellscript.png",
+            "imgalt":"Shell_script",
+            "title":"Shell Script"
+        },
+        {
+            "imglink":"/images/skill/git.png",
+            "imgalt":"Git",
+            "title":"Git"
+        },
+        {
+            "imglink":"/images/skill/jenkins.jpg",
+            "imgalt":"Jenkins",
+            "title":"Jenkins"
+        },
+        {
+            "imglink":"/images/skill/docker.png",
+            "imgalt":"Docker",
+            "title":"Docker"
+        },
+        {
+            "imglink":"/images/skill/angular.png",
+            "imgalt":"Angular",
+            "title":"Angular"
         },
         {
             "imglink":"/images/skill/react.png",
@@ -65,6 +80,11 @@
             "imglink":"/images/skill/aspcoremvc.png",
             "imgalt":"ASP_core_MVC",
             "title":"ASP Core MVC"
+        },
+        {
+            "imglink":"/images/skill/spring.png",
+            "imgalt":"Spring",
+            "title":"Spring"
         },
         {
             "imglink":"/images/skill/expressjs.png",
@@ -102,6 +122,16 @@
             "title":"Ajax"
         },
         {
+            "imglink":"/images/skill/aws.png",
+            "imgalt":"aws",
+            "title":"AWS"
+        },
+        {
+            "imglink":"/images/skill/oracleSQL.png",
+            "imgalt":"Oracle_SQL",
+            "title":"Oracle SQL"
+        },
+        {
             "imglink":"/images/skill/mysql.png",
             "imgalt":"mysql",
             "title":"MySQL"
@@ -136,46 +166,27 @@
             "imgalt":"serviceNow",
             "title":"Service Now"
         },
+        
         {
-            "imglink":"/images/skill/angular.png",
-            "imgalt":"Angular",
-            "title":"Angular"
+            "imglink":"/images/skill/seo.png",
+            "imgalt":"SEO",
+            "title":"SEO"
         },
         {
-            "imglink":"/images/skill/git.png",
-            "imgalt":"Git",
-            "title":"Git"
+            "imglink":"/images/skill/facebookads.png",
+            "imgalt":"FacebookAds",
+            "title":"Facebook Ads"
         },
         {
-            "imglink":"/images/skill/jenkins.jpg",
-            "imgalt":"Jenkins",
-            "title":"Jenkins"
+            "imglink":"/images/skill/googleads.png",
+            "imgalt":"Google Adwords",
+            "title":"Google Adwords"
         },
         {
-            "imglink":"/images/skill/typescript.png",
-            "imgalt":"typescript",
-            "title":"TypeScript"
-        },
-        {
-            "imglink":"/images/skill/shellscript.png",
-            "imgalt":"Shell_script",
-            "title":"Shell Script"
-        },
-        {
-            "imglink":"/images/skill/spring.png",
-            "imgalt":"Spring",
-            "title":"Spring"
-        },
-        {
-            "imglink":"/images/skill/oracleSQL.png",
-            "imgalt":"Oracle_SQL",
-            "title":"Oracle SQL"
-        },
-        {
-            "imglink":"/images/skill/java.png",
-            "imgalt":"Java",
-            "title":"Java"
-        }    
+            "imglink":"/images/skill/jira.png",
+            "imgalt":"Jira",
+            "title":"Jira"
+        }
     ]
 
 }

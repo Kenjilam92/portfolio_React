@@ -7,7 +7,16 @@ const AboutMe = props =>{
   const [AboutMeAPI, setAboutMeAPI] =useState({
     "content": [],
     "skill":[]
-  })  
+  })
+  const order = [
+    "Service Now","Jira","Shell Script",
+    "Git","Jenkins","Docker","Node Js",
+    "Java","C#","Type Script","python",
+    "Spring", ".NET", "ASP_Core","Django",
+    "Angular","React","Bootstrap",
+    "Photoshop","CorelDraw",
+    "SEO","Facebook Ads", "Google Adwords"
+  ]
   const getData =() => {
       fetch("/json/AboutMeAPI.json", {
           headers:{
@@ -16,7 +25,16 @@ const AboutMe = props =>{
           },
       })
       .then ( res => res.json() )
-      .then ( json => setAboutMeAPI(json))
+      .then ( json => {
+        var tempJson = json; 
+        tempJson.skill.sort(orderFunction)
+        tempJson.skill = tempJson.skill.filter((a) => order.includes(a.title));
+        setAboutMeAPI(tempJson);
+      })
+  }
+
+  const orderFunction = (a,b) => {
+  return order.indexOf(a.title)-order.indexOf(b.title);
   }
   useEffect( () => getData() , [] );  
 
