@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = props => {
     return(
-        <div key={props.keymap} className="d-flex flex-column align-items-center text-center p-2 ml-1 mr-1" style={{width : 75+"px"}}>
+        <div key={props.keymap} className="d-flex flex-column align-items-center text-center p-2 ml-1 mr-2" style={{width : 75+"px"}}>
             <p>
                 <img src={props.imglink} 
                  alt={props.imgalt}
@@ -10,7 +10,7 @@ const Card = props => {
                  style={{width : 75+"px"}}
                  />
             </p>
-            <p>{props.children}</p>
+            <p className="cardIconText">{props.children}</p>
         </div>
     );
 }

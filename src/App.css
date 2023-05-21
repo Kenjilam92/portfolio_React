@@ -186,4 +186,6 @@ body{
     padding-right: 3vw;
     padding-top: 3vh
   }
-
+  .cardIconText{
+    font-size: small;
+  }

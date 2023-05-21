@@ -53,7 +53,7 @@ const AboutMe = props =>{
         );
       })
   }
-  useEffect( () => getData() , [] );  
+  useEffect( () => getData() , [getData] );  
   
   return(
       <div id={props.id} className={`${props.className}`} style={props.style}>
@@ -64,32 +64,32 @@ const AboutMe = props =>{
           </p>  
         )}
         <p className="h3 font-weight-bold text-warning">Technical Skills:</p>
-        <div className="w-100 text-white col">
-          <p className="h4 font-weight-bold:">Coding Languages</p>
+        <div className="w-100 text-white d-flex flex-column">
+          <p className="font-weight-bold text-warning">Coding Languages</p>
           <div className="skillRow">
               {CodingLanguages.map( (t,k) =>
                 <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
               )}
           </div>
-          <p className="h4 font-weight-bold:">Frameworks</p>
+          <p className="font-weight-bold text-warning">Frameworks</p>
           <div className="skillRow">
               {FrameWorks.map( (t,k) =>
                 <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
               )}
           </div>
-          <p className="h4 font-weight-bold:">CI/CD</p>
+          <p className="font-weight-bold text-warning">CI/CD</p>
           <div className="skillRow">
               {CICD.map( (t,k) =>
                 <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
               )}
           </div>
-          <p className="h4 font-weight-bold:">Database</p>
+          <p className="font-weight-bold text-warning">Database</p>
           <div className="skillRow">
               {Database.map( (t,k) =>
                 <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
               )}
           </div>
-          <p className="h4 font-weight-bold:">Other</p>
+          <p className="font-weight-bold text-warning">Other</p>
           <div className="skillRow">
               {Other.map( (t,k) =>
                 <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
