@@ -7,8 +7,9 @@ const Menu = props =>{
         props.click(e);
       }
     return(
-        <nav className={`${props.className} navbar navbar-expand-lg navbar-dark ${props.Theme.bg}`} style={props.style}>
-          <button onClick={e=>props.click("Home")} className="navbar-brand btn bg-transparent m-3" to="/">Kenji Lam</button>
+        <div className={props.className} style={props.style}>
+        <nav className={"navbar navbar-expand-lg navbar-dark"} >
+          <button onClick={e=>props.click("Home")} className="navbar-brand btn bg-transparent" to="/">Kenji Lam</button>
           <button className="navbar-toggler" type="button" 
                   data-toggle="collapse" 
                   data-target="#navbarNavAltMarkup" 
@@ -30,7 +31,7 @@ const Menu = props =>{
             </div>
           </div>
         </nav>
-
+        </div>          
 
     );
 }
