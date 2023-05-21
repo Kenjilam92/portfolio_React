@@ -11,8 +11,8 @@ import "bootstrap/js/dist/modal.js";
 import "bootstrap/js/dist/collapse.js";
 import "./App.css";
 /////////////Components
-import Phone from "./Components/Phone";
-import Laptop from "./Components/Laptop";
+import Phone from "./Components/phone/Phone";
+import Laptop from "./Components/laptop/Laptop";
 import Error404 from 'Components/General/Error404';
 // import Progressing from "./Components/General/Progressing";
 // import Error404 from "./Components/General/Error404";

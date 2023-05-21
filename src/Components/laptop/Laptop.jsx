@@ -2,12 +2,12 @@ import React from "react";
 
 // import ProjectList from "./Public/ProjectList";
 
-import Aboutme from "./AboutMe/Laptop/AboutMe";
-import Home from "./Home/Laptop/Home";
-import Projects from "./Projects/Laptop/Projects";
-import Menu from "./Menu/Laptop/Menu";
-import SocialLink from "./SocialLink/Laptop/SocialLink";
-import Resume from "./General/Resume"
+import Aboutme from "./AboutMe";
+import Home from "./Home";
+import Projects from "./Project/Projects";
+import Menu from "./Menu";
+import SocialLink from "./SocialLink";
+import Resume from "../General/Resume"
 // import img1 from "/images/kenjilam_baltimore.jpg"
 /// APIs
 import MenuAPI from "APIs/MenuAPI";

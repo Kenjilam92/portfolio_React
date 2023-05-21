@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import Card from "../../General/Card";
+import Card from "../General/Card";
 // import Carousel from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

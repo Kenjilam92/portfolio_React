@@ -1,12 +1,12 @@
 import React from "react";
 
 // import ProjectList from "./Public/ProjectList";
-import Resume from "./General/Resume";
-import Aboutme from "./AboutMe/Phone/AboutMe";
-import Home from "./Home/Phone/Home";
-import Projects from "./Projects/Phone/Projects";
-import Menu from "./Menu/Phone/Menu";
-import SocialLink from "./SocialLink/Phone/SocialLink";
+import Resume from "../General/Resume";
+import Aboutme from "./AboutMe";
+import Home from "./Home";
+import Projects from "./Project/Projects";
+import Menu from "./Menu";
+import SocialLink from "./SocialLink";
 
 
 ///APIs

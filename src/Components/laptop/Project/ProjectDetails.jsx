@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import Card from "Components/General/Card"
-import Gallery from "Components/Gallery/Phone/Gallery";
+import Gallery from "Components/laptop/Gallery/Gallery";
 
 const ProjectDetails = props => {
     
@@ -11,15 +11,15 @@ const ProjectDetails = props => {
     return (
         <div className={`${props.className} d-flex flex-column w-100 p-2`} style={props.style}>
             <nav className="btn-group align-self-start">
-                <button className={`${props.Theme.btn} `} onClick={e=> setShowDetails(true)}>
+                <span className={`${props.Theme.btn} `} onClick={e=> setShowDetails(true)}>
                     Features
-                </button>
-                <button className={`${props.Theme.btn} `} onClick={e=> setShowDetails(false)}>
-                    Gallery
-                </button>
+                </span>
+                <span className={`${props.Theme.btn} `} onClick={e=> setShowDetails(false)}>
+                    Demo Images
+                </span>
             </nav>
             
-            <div className="p-2">
+            <div className="p-2 text-left">
                 <>
                 {showDetails?
                 <>

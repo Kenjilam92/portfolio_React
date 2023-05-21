@@ -4,7 +4,6 @@ import ProjectButton from "./ProjectButton";
 import ProjectDetails from "./ProjectDetails";
 import projectsList from "APIs/ProjectAPI"
 // import Carousel from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Projects = props =>{
