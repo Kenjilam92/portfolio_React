@@ -1,9 +1,9 @@
 {
     "content" : [
         "Hello,",
-        "My name is Kenji! I am a digital marketing specialist and full-stack website developer. I have seven years of experience in building websites and developing online marketing strategies. One of my previous projects is even located within the top 3 results of Google Search! This expertise provides my clients with greater access to their targeted population. With my help, you can achieve high visibility and increase web traffic on all major search engines, such as Google, Bing, and Yahoo.",
-        "I have a great passion for technology and mathematics. I typed my first lines of code to solve algorithms when I was in high school. However, the internet and the technology of my country, Vietnam, in the 2000s, was not so advanced. Therefore, I focused on business fields and mathematics and got my bachelor's degree in Marketing Management. In 2014, I had my first job as a Digital Marketer, who analyze data and develop SEO strategies for commercial websites. This opportunity brought me closer to the web developer career. In 2016, I became a permanent resident of the United States and invested two years in college to understand the culture and market in the U.S. While adapting to this new life, I have been working on side-projects and developing my coding skills. Specifically, I can use multiple coding languages including Python, C#, and JavaScript. Also, I have proficiency in full-stack frameworks, such as Django, ASP.NET core MVC, MERN, etc., which connect with different database systems like MongoDB, MySQL, SQLite.",
-        "Besides continuously developing other coding languages, frameworks, and data management, I am still available for a fulltime position or side projects. If you are interested in working with me, please don't hesitate to leave me a message! It will be my pleasure to work with you."
+        "My name is Kenji! I am a digital marketing specialist and full-stack website developer. I have seven years of experience in building websites and developing online marketing strategies. One of my previous projects is located within the top 3 results of Google Search! This expertise provides my clients with greater access to their targeted population. With my help, you can achieve high visibility and increase web traffic on all major search engines, such as Google, Bing, and Yahoo.",
+        "I have a great passion for technology and mathematics. My first lines of code werewere typed when I was in high school. Most of my projects were used to solve complex algorithms. However, in the 2000s, the internet and technology were not so easy to access for me. Therefore, I switched my focus to business and mathematics and got my bachelor's degree in Marketing Management. In 2014, I applied for my first job as a Digital Marketer which gave me more experience in big data analysis, designing UX/UI, and developing SEO strategies for commercial websites. This opportunity brought me closer to the software engineer career. Starting in 2017, I invested two years in a U.S. college. While adapting to the culture and market in the U.S., I have been working on side projects and developing my coding skills. Specifically, I can use multiple coding languages included Java, Python, C#, and JavaScript. Also, I have proficiency in full-stack frameworks, such as Spring, Django, ASP.NET core MVC, MERN, etc. Please view my skills section to have details.",
+        "In 2019, I honorably graduated and archived Summa cum laude. Since 2020, I have been gaining more coding experience as a contract Software developer for different projects from CVS Pharmacy and Freddie Mac. Besides, I am still available for side projects or new open positions. If you are interested in working with me, please don't hesitate to leave me a message! It will be my pleasure to work with you."
     ],
     "skill": [
         {
@@ -77,9 +77,9 @@
             "title":".NET"
         },
         {
-            "imglink":"/images/skill/aspcoremvc.png",
-            "imgalt":"ASP_core_MVC",
-            "title":"ASP Core MVC"
+            "imglink":"/images/skill/asp.png",
+            "imgalt":"ASP_core",
+            "title":"ASP Core"
         },
         {
             "imglink":"/images/skill/spring.png",
@@ -128,8 +128,8 @@
         },
         {
             "imglink":"/images/skill/oracleSQL.png",
-            "imgalt":"Oracle_SQL",
-            "title":"Oracle SQL"
+            "imgalt":"Oracle",
+            "title":"Oracle"
         },
         {
             "imglink":"/images/skill/mysql.png",
@@ -183,10 +183,21 @@
             "title":"Google Adwords"
         },
         {
-            "imglink":"/images/skill/jira.png",
-            "imgalt":"Jira",
-            "title":"Jira"
+            "imglink":"/images/skill/DB2.png",
+            "imgalt":"db2",
+            "title":"DB2"
+        },
+        {
+            "imglink":"/images/skill/Sybase.png",
+            "imgalt":"sybase",
+            "title":"Sybase"
+        },
+        {
+            "imglink":"/images/skill/OpenShift.png",
+            "imgalt":"openshift",
+            "title":"OpenShift"
         }
+
     ]
 
 }

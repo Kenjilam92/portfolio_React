@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Card from "../../General/Card";
-import Carousel from "react-slick";
+// import Carousel from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -13,13 +13,15 @@ const AboutMe = props =>{
   const [FrameWorks,setFrameWorks] = useState([]);
   const [CICD,setCICD] = useState([]);
   const [Other,setOther] = useState([]);
+  const [Database, setDatabase] = useState([]);
   
   // const order = [
-  const CICDList = ["Service Now","Jira","Git","Jenkins","Docker","Node Js"];
+  const CICDList = ["Service Now","Jira","Git","Jenkins","Docker","AWS","OpenShift","Node Js"];
   const CodingLanguagesList =["Shell Script","Java","C#","TypeScript","Python","HTML","CSS","JavaScript"];
-  const FrameWorksList = ["Spring", ".NET", "ASP_Core","Django","Angular","React","Bootstrap"];
-  const OtherList = ["SEO","Facebook Ads", "Google Adwords", "Photoshop","CorelDraw"];
-  
+  const FrameWorksList = ["Spring", ".NET", "Django","Angular","React","Bootstrap", "ASP Core","Socket IO", "jQuery","Express JS"];
+  const OtherList = ["SEO","Facebook Ads", "Google Adwords", "Photoshop","CorelDraw","Wix"];
+  const DatabaseList = ["Oracle","DB2", "AWS","Sybase","MongoDB","MySQL", "SQLite", ];
+
   const getData =() => {
       fetch("/json/AboutMeAPI.json", {
           headers:{
@@ -33,7 +35,6 @@ const AboutMe = props =>{
         // tempJson.skill.sort(orderFunction)
         // tempJson.skill = tempJson.skill.filter((a) => order.includes(a.title));
         setAboutMeAPI(json);
-        let tempJson = json.skill;
         setCodingLanguages(
           json.skill.sort( (a,b) => CodingLanguagesList.indexOf(a.title) - CodingLanguagesList.indexOf(b.title) )
                     .filter( (a) => CodingLanguagesList.includes(a.title))
@@ -49,6 +50,10 @@ const AboutMe = props =>{
         setOther(
           json.skill.sort( (a,b) => OtherList.indexOf(a.title) - OtherList.indexOf(b.title) )
                     .filter( (a) => OtherList.includes(a.title))
+        );
+        setDatabase(
+          json.skill.sort( (a,b) => DatabaseList.indexOf(a.title) - DatabaseList.indexOf(b.title) )
+                    .filter( (a) => DatabaseList.includes(a.title))
         );
       })
   }
@@ -82,6 +87,12 @@ const AboutMe = props =>{
           <p className="h4 font-weight-bold:">CI/CD</p>
           <div className="skillRow">
               {CICD.map( (t,k) =>
+                <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
+              )}
+          </div>
+          <p className="h4 font-weight-bold:">Database</p>
+          <div className="skillRow">
+              {Database.map( (t,k) =>
                 <Card keymap={`technicalSkill${t.title}`} imglink={t.imglink} imgalt={t.imgalt}>{t.title}</Card>
               )}
           </div>
