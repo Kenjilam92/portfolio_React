@@ -32,7 +32,7 @@ const Gallery = props =>{
                 </>
             )}
             <Modal ModalId="showImage">
-                <div className="d-flex flex-column align-items-end" style={{height: 80+"%", width: 80+"%"}}>
+                <div className="d-flex flex-column align-items-center justify-content-center">
                     <div className="w-100 d-flex justify-content-between align-items-center font-weight-bold bg-dark">
                         <div className="w-100 text-center font-weight-bold">{Desc}</div>
                         <button type="button " 
@@ -41,12 +41,16 @@ const Gallery = props =>{
                             >&times;
                         </button>
                     </div>
-                    <div className="w-100 d-flex justify-content-center overflow-hidden p-3 " 
+                    <div className="w-100" 
                          style={{
-                            backgroundColor: "rgba(255,255,255,0.7)"
+                            backgroundColor: "rgba(255,255,255,0.7)",
+                            overflow: "scroll",
+                            height:"fit-content",
+                            width:100+"%"
                          }}>
                         <img style={{
-                                objectFit: "scale-down"
+                                objectFit: "scale-down",
+                                width:100+"%"
                              }} 
                             src={Img} 
                             alt={ImgAlt}/>
