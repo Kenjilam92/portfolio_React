@@ -1,4 +1,5 @@
 import React from "react";
+import Iframe from 'react-iframe'
 
 // import ProjectList from "./Public/ProjectList";
 import Resume from "../General/Resume";
@@ -76,7 +77,15 @@ const Phone = props =>{
                     id="Projects"
                 />
                 </div>
-                
+                <div className="phonePageSection">
+                    <p className="h1 text-warning">Contact</p>
+        
+                    <Iframe url="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZAAOMybApUQjlRWjJROEJTT0lHMDVOTEpDSDVOQ09QNi4u&embed=true"
+                            className="contactSection" 
+                            allow="fullscreen"
+                            id="contact"
+                    />
+                </div>
             </div>
 
             

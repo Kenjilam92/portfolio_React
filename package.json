@@ -13,6 +13,7 @@
     "json2mq": "^0.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-iframe": "^1.8.5",
     "react-scripts": "^5.0.1",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
@@ -23,6 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "serve": "serve -s build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-deploy -d build"
   },

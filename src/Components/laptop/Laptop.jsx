@@ -1,5 +1,5 @@
 import React from "react";
-
+import Iframe from 'react-iframe'
 // import ProjectList from "./Public/ProjectList";
 
 import Aboutme from "./AboutMe";
@@ -84,7 +84,15 @@ const Laptop = props =>{
                     Theme={props.Theme}
                     id="Projects"
                 />
-                
+                <div className="pageSection">
+                    <p className="h1 font-weight-bold text-warning text-sm-left text-center">Contact</p>
+        
+                    <Iframe url="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZAAOMybApUQjlRWjJROEJTT0lHMDVOTEpDSDVOQ09QNi4u&embed=true"
+                            className="contactSection" 
+                            allow="fullscreen"
+                            id="contact"
+                    />
+                </div>
             </div>
         </div>
         </>
