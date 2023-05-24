@@ -77,13 +77,13 @@ const Phone = props =>{
                     id="Projects"
                 />
                 </div>
-                <div className="phonePageSection">
+                <div className="phonePageSection" id="Contact">
                     <p className="h1 text-warning">Contact</p>
         
                     <Iframe url="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZAAOMybApUQjlRWjJROEJTT0lHMDVOTEpDSDVOQ09QNi4u&embed=true"
                             className="contactSection" 
                             allow="fullscreen"
-                            id="contact"
+                            
                     />
                 </div>
             </div>

@@ -6,7 +6,7 @@ const MenuAPI =[
         url: "/"
     },
     {
-        title: "About Me",
+        title: "Introduction",
         id: "MenuAboutMe",
         section: "AboutMe",
         url: "/aboutme"
@@ -22,6 +22,12 @@ const MenuAPI =[
         id: "MenuProjects",
         section: "Projects",
         url: "/projects"
+    },
+    {
+        title: "Contact",
+        id: "MenuContact",
+        section: "Contact",
+        url: "/contact"
     }
 ];
 

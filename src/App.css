@@ -164,11 +164,12 @@ body{
   .backgroundPhone{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), url(../public/images/kenjilam_palace.jpeg);
         width: 100vw;
-        height: 90vh;
+        max-height: calc(100vh - 107.6px);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        position: absolute;
+        position: fixed;
+        top: 57.6px;
         overflow-y: scroll;
         overflow-x: hidden;
   }   

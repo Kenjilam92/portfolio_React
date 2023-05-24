@@ -53,7 +53,7 @@ function App() {
       />
       }
       <Error404
-        path={`${process.env.REACT_APP_FOR_PATH}/*`}
+        path={`/*`}
       />
     </Router>
   );
