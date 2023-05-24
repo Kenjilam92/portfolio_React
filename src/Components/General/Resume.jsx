@@ -47,8 +47,8 @@ const Resume = props => {
                 </div>
             )}
             {ResumeAPI.map((ex,k) => 
-                <div key={"Resume"+k} className="text-white row phone">
-                  <div className={`col w-fit`}>
+                <div key={"Resume"+k} className="text-white phone">
+                  <div>
                   {/* text-${ex.type==="education"?"info":"warning"} */}
                       <p> &#x25cf;
                         <b className="text-warning">{ex.period}</b>
