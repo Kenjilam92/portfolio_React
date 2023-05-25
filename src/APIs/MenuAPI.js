@@ -12,7 +12,7 @@ const MenuAPI =[
         url: "/aboutme"
     },
     {
-        title: "Resume",
+        title: "Experience",
         id: "MenuResume",
         section: "Resume",
         url: "/resume"
