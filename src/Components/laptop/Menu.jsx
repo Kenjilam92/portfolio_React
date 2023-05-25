@@ -8,7 +8,7 @@ const Menu = props =>{
                         className={`${props.Theme.btn} ${props.buttonClassName}`}
                         id={e.id}
                         onClick={b=>props.click(e.section)}
-                        > <span className={`${props.rotateText}`}>{e.title}</span>
+                        > <span className={`${props.menuText}`}>{e.title}</span>
                 </button>
             )}
         </div>

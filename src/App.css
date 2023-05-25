@@ -107,7 +107,6 @@ body{
 
 .rotateLeft{
   writing-mode: vertical-rl;
-  /* text-orientation: mixed; */
   transform: rotate(180deg);
 }
 
@@ -188,7 +187,8 @@ body{
     margin-bottom: 30vh;
     padding-left: 3vw;
     padding-right: 3vw;
-    padding-top: 3vh
+    padding-top: 3vh;
+    padding-bottom: 3vh;
   }
   .cardIconText{
     font-size: small;
@@ -224,4 +224,74 @@ body{
     .phone{
       display: inline;
     }
+  }
+
+  .laptopMenu{
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    top:0;
+    left:0;
+    z-index: 5
+  }
+  .menuText{
+    writing-mode: vertical-rl;
+    /* text-orientation: mixed; */
+    transform: rotate(180deg);
+    white-space: nowrap;
+  }
+
+  .socialLinks{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 1vh;
+    left: 0;
+  }
+  .socialButton{
+    width: 50px;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+  }
+
+  @media (max-height: 702px) {
+    .socialLinks{
+      flex-direction: unset;
+      
+    }
+  }
+
+  @media (max-height: 470px) {
+    .socialLinks{
+      flex-direction: unset;
+      width: fit-content;
+    }
+    .menuText{
+      writing-mode: unset ;
+      transform: rotate(0deg);
+    }
+  }
+
+  @media (max-width: 865px){
+    .socialButton{
+      width: 5.9vw;
+    }
+    .socialLinks{
+      width: fit-content;
+    }
+  } 
+
+  @media (max-height: 270px) {
+    .socialLinks{
+      flex-direction: column;
+      width: fit-content;
+      left: 105px;
+      top:0
+    }
+    
   }
