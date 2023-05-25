@@ -4,7 +4,7 @@ const SocialContactsAPI=[
     {
         image: path + "/images/Facebook_2.png",
         alt: "Facebook",
-        url: "https://www.facebook.com/Kenjil.lam"
+        url: "https://www.facebook.com/KenjiLam07/"
     },
     {
         url: "https://www.instagram.com/kenji_lam1992",
